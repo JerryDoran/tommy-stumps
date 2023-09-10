@@ -1,0 +1,51 @@
+---
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Image } from 'astro:assets';
+import stump from '../images/stump-logo.png'
+---
+
+<header class="bg-neutral-100 pr-4">
+    <Astronav>
+    <div class="md:flex items-center max-w-6xl mx-auto">
+        <div class="w-full flex items-center justify-between py-0 px-5"> 
+            <div class="flex items-center">
+                <Image src={stump} alt="a tree stump" width="80" />         
+                <a href="#home" class='text-xl max-sm:text-lg -ml-4 font-bold'>Tommy Stumps</a>
+            </div>
+            
+            <div class="block md:hidden">
+                <MenuIcon />
+            </div>
+        </div>
+        <MenuItems
+            class="hidden z-50 max-md:absolute md:flex max-md:top-20 max-md:right-5 animate-fade"
+        >
+            <ul
+                class="flex flex-col p-7 bg-neutral-100 gap-5 shadow-lg md:shadow-none md:flex-row md:bg-transparent md:p-0 rounded-lg"
+            >
+                <li
+                    class="py-0 px-3 transition duration-200 block hover:text-blue-500 w-full"
+                >
+                    <a href="#home">Home</a>
+                </li>
+                <li
+                    class="py-0 px-3 transition duration-200 hover:text-blue-500"
+                >
+                    <a href="#about">About</a>
+                </li>
+                <li
+                    class="py-0 px-3 transition duration-200 hover:text-blue-500"
+                >
+                    <a href="#about">Gallery</a>
+                </li>
+                <li
+                    class="py-0 px-3 transition duration-200 hover:text-blue-500"
+                >
+                    <a href="#about">Contact</a>
+                </li>
+            </ul>
+        </MenuItems>
+    </div>
+</Astronav>
+   
+</header>
