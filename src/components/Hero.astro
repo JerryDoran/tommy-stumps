@@ -3,16 +3,16 @@ import { Image } from "astro:assets";
 import logo from '../images/logo.png'
 ---
 
-<article class="flex flex-col md:flex-row items-center md:gap-2 pt-10 justify-between">
+<article class="flex flex-col md:flex-row items-center md:gap-2 pt-10 justify-between relative"> 
   <div class="flex flex-col gap-8 max-md:items-center">
-    <h1 class="md:leading-snug lg:leading-snug leading-normal lg:text-6xl md:text-5xl max-md:text-center text-4xl font-bold font-heading">Keep Your Property Looking its Best</h1>
+    <h1 class="md:leading-snug lg:leading-snug leading-normal lg:text-6xl md:text-5xl max-md:text-center text-5xl font-extrabold font-heading">Keep Your Property Looking its Best</h1>
     <p class="text-xl">
       Locally owned Tommy Tree Stump, LLC will keep your property attractive and safe with professional tree services. We specialize in competitively priced stump removal. We will come to your location to bid on the project and keep your property protected while we work. 
-      <span class="font-bold">Contact us for a FREE on-site estimate.</span>
     </p>
+    <span class="font-bold text-xl">FREE on-site estimate.</span>
     <button class="bg-black cursor-pointer transition hover:bg-neutral-700 active:bg-black text-neutral-100 w-40 px-4 py-2 text-2xl rounded-lg">Contact Us</button>
   </div>
-  <Image src={logo} alt="a tree stump" class="w-[50%] max-md:w-full max-md:-mt-10" /> 
+  <Image src={logo} alt="a tree stump" class="w-[50%] max-md:w-full max-md:-mt-5" /> 
 </article>
   
 
