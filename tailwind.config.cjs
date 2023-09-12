@@ -8,7 +8,7 @@ module.exports = {
         heading: ['Open Sans', 'sans-serif'],
       },
       animation: {
-        fade: 'fadeOut .5s ease-in-out',
+        fade: 'fadeOut .3s ease-in-out',
       },
       keyframes: (theme) => ({
         fadeOut: {

@@ -1,16 +1,17 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Image } from 'astro:assets';
-import stump from '../images/stump-logo.png'
+import stump from '../images/stump-logo4.png'
 ---
 
-<header class="bg-neutral-100 pr-4">
+<header class="bg-black text-neutral-200 p-4">
     <Astronav>
     <div class="md:flex items-center max-w-6xl mx-auto">
         <div class="w-full flex items-center justify-between py-0 px-5"> 
-            <div class="flex items-center">
-                <Image src={stump} alt="a tree stump" width="80" />         
-                <a href="#home" class='text-xl max-sm:text-lg -ml-4 font-bold'>Tommy Stumps</a>
+            <div class="flex items-center">                         
+                <a href="#home" class='text-xl max-sm:text-lg -ml-4 font-bold'>
+                    <Image src={stump} alt="a tree stump" width="100" />
+                </a>
             </div>
             
             <div class="block md:hidden">
@@ -18,30 +19,30 @@ import stump from '../images/stump-logo.png'
             </div>
         </div>
         <MenuItems
-            class="hidden z-50 max-md:absolute md:flex max-md:top-20 max-md:right-5 animate-fade"
+            class="hidden z-50 max-md:absolute md:flex max-md:top-28 max-md:right-5 animate-fade"
         >
             <ul
-                class="flex flex-col p-7 bg-neutral-100 gap-5 shadow-lg md:shadow-none md:flex-row md:bg-transparent md:p-0 rounded-lg"
+                class="flex flex-col p-7 bg-black text-neutral-100 gap-5 shadow-lg md:shadow-none md:flex-row md:bg-transparent md:p-0 rounded-lg font-bold text-lg"
             >
                 <li
-                    class="py-0 px-3 transition duration-200 block hover:text-blue-500 w-full"
+                    class="py-0 px-3 transition duration-200 block hover:text-green-300 w-full"
                 >
-                    <a href="#home">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li
-                    class="py-0 px-3 transition duration-200 hover:text-blue-500"
+                    class="py-0 px-3 transition duration-200 hover:text-green-300"
                 >
-                    <a href="#about">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <li
-                    class="py-0 px-3 transition duration-200 hover:text-blue-500"
+                    class="py-0 px-3 transition duration-200 hover:text-green-300"
                 >
-                    <a href="#about">Gallery</a>
+                    <a href="/gallery">Gallery</a>
                 </li>
                 <li
-                    class="py-0 px-3 transition duration-200 hover:text-blue-500"
+                    class="py-0 px-3 transition duration-200 hover:text-green-300"
                 >
-                    <a href="#about">Contact</a>
+                    <a href="/contact">Contact</a>
                 </li>
             </ul>
         </MenuItems>
