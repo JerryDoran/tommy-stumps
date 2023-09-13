@@ -9,11 +9,20 @@ module.exports = {
       },
       animation: {
         fade: 'fadeOut .3s ease-in-out',
+        moveBanner: 'fadeBanner 1.5s ease-in',
       },
       keyframes: (theme) => ({
         fadeOut: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        fadeBanner: {
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
         },
       }),
     },
