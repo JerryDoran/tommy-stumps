@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Nunito', 'sans-serif'],
-        heading: ['Open Sans', 'sans-serif'],
+        heading: ['Roboto', 'sans-serif'],
       },
       animation: {
         fade: 'fadeOut .3s ease-in-out',
