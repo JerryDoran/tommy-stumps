@@ -7,6 +7,9 @@ module.exports = {
         sans: ['Nunito', 'sans-serif'],
         heading: ['Roboto', 'sans-serif'],
       },
+      gridTemplateColumns: {
+        gallery: 'repeat(auto-fit, minmax(250px, 1fr))',
+      },
       animation: {
         fade: 'fadeOut .3s ease-in-out',
         moveBanner: 'fadeBanner 1.5s ease-in',
