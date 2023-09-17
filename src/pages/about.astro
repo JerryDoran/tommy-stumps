@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import stump from '../images/stump-19-min.png'
 import { Image } from "astro:assets";
 import imageOne from '../images/stump-17-min.png'
 import imageTwo from '../images/stump-10.webp'
@@ -11,9 +12,9 @@ import imageThree from '../images/stump-19-min.png'
   seoTitle="Tommy Stumps LLC | About"
   seoDescription="About what we do"
 >
-  <section class="mx-auto px-4 pt-10">
+  <section class="mx-auto px-4 py-10">
 		<h1 class="text-4xl font-black uppercase text-center">About Us</h1>
-    <div class="flex flex-wrap gap-8 py-20 md:flex-row justify-center items-center">
+    <div class="flex flex-wrap gap-8 pt-20 md:flex-row justify-center items-center">
       <div class="flex flex-col justify-center pb-10 items-center gap-4 ">
         <Image src={imageOne} alt="who we are" class="max-md:w-[25rem] max-md:h-[25rem] w-80 h-80 rounded-full overflow-hidden" />
         <h2 class="text-2xl max-md:text-3xl font-bold text-green-700">Customer Satisfaction</h2>
@@ -31,5 +32,25 @@ import imageThree from '../images/stump-19-min.png'
         <p class="max-w-[380px] text-justify">Satisfaction is our priority as we strive to meet your goals and the needs of the project.  We believe the lost art of customer care still speaks to prospective customers. We are proud to provide a service that guarantees your requirements are met.</p>
       </div>
     </div>
+    <p class="text-xl pb-10 text-justify w-[80%] mx-auto">Our company works with powerful stump grinding equipment that will tear up your tree stump without a hitch. You'll appreciate that our equipment is easily transportable, so we can remove tree stumps from all locations.
+    </p>
+    <div class="flex gap-4 items-center justify-center max-lg:flex-col">
+      <div class="max-lg:w-[30rem] max-lg:h-[25rem] relative object-contain">
+        <div class="bg-gray-300 max-lg:w-[30rem] max-lg:h-[360px] -top-3 -right-3 absolute -z-10" />
+        <Image src={stump} alt="who we are" class="lg:w-[30rem] lg:h-[20rem]"  />
+      </div> 
+      <div class="flex flex-col items-center lg:items-start">
+        <p class='text-xl pb-5 font-semibold'>Stump grinding is preferred by many property owners because...</p> 
+        <ul class="pb-5 text-green-700 font-bold"> 
+          <li><span class="text-sm pr-2">√</span> It improves your property's safety</li>
+          <li><span class="text-sm pr-2">√</span> It enhances your property's appearance</li>
+          <li><span class="text-sm pr-2">√</span> It protects your property from pests</li>
+          <li><span class="text-sm pr-2">√</span> It makes lawn maintenance safer and easier</li>
+        </ul>
+        <p class="max-lg:text-center w-[80%] mx-auto">We'll help you take the steps needed to make your property safer and more beautiful. Call  us today to get stump grinding services lined up.        
+        </p>
+      </div>  
+    </div>    
+    <p class="text-2xl font-bold text-green-600 pt-10 text-center">Get in touch to schedule stump removal services.</p>
   </section>
 </MainLayout>
