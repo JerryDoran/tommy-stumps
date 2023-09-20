@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Icon } from 'astro-icon'
 ---
 
 <MainLayout
@@ -7,11 +8,21 @@ import MainLayout from "../layouts/MainLayout.astro";
   seoTitle="Tommy Stumps LLC | Contact"
   seoDescription="Call the experts for stump removal of any size"
 >
-  <section class="mx-auto px-4 py-10">
-    
+  <section class="mx-auto px-4 py-10">   
    	<h1 class="text-4xl font-black uppercase text-center">Contact Us</h1>
-    
-    
-   
+    <article class="max-w-sm max-sm:w-[20rem] mt-20 py-5 px-4 h-60 shadow-lg rounded-lg mx-auto relative overflow-hidden">
+      <div class="rounded-full absolute w-[500px] h-[500px] bg-gradient-to-r from-green-300 to-green-50 -left-[300px] -top-[300px] -z-10" />
+      <div class="rounded-full absolute w-[500px] h-[500px] bg-gradient-to-r from-green-50 to-green-300 -bottom-[300px] -right-[400px] -z-10" />
+      <h2 class="pb-10">Tommy Stumps LLC</h2>
+      <div class="mx-auto w-[22rem] px-2 flex flex-col gap-4">
+        <h2 class="text-lg font-semibold">Phone: 330-942-8862</h2>
+        <h2 class="text-lg font-semibold">Email: tomstumpsgrinding@gmail.com</h2>
+        <a href="https://m.facebook.com/thomas.ellsmore.7" target="_blank" rel="noreferer">
+          <Icon pack="mdi" name="facebook" class="w-8" />
+        </a>
+            
+      </div>
+      
+    </article>
   </section>
 </MainLayout>
